@@ -21,7 +21,6 @@
 		ACCB62EB13421E6500ACE658 /* QuickWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCB62E513421E6500ACE658 /* QuickWebViewController.xib */; };
 		ACCB62EC13421E6500ACE658 /* SmAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62E813421E6500ACE658 /* SmAddView.m */; };
 		ACCB62F213421EC200ACE658 /* libAdMaker_dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62F013421EC200ACE658 /* libAdMaker_dev.a */; };
-		ACCB62F313421EC200ACE658 /* libAdMaker_sim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62F113421EC200ACE658 /* libAdMaker_sim.a */; };
 		ACCB62FD13421EEC00ACE658 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62FB13421EEC00ACE658 /* libGoogleAdMobAds.a */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
@@ -113,7 +112,6 @@
 				ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */,
 				ACCB630713421F5C00ACE658 /* AudioToolbox.framework in Frameworks */,
 				ACCB62F213421EC200ACE658 /* libAdMaker_dev.a in Frameworks */,
-				ACCB62F313421EC200ACE658 /* libAdMaker_sim.a in Frameworks */,
 				ACCB62FD13421EEC00ACE658 /* libGoogleAdMobAds.a in Frameworks */,
 				ACCB63121342212200ACE658 /* iAd.framework in Frameworks */,
 			);
