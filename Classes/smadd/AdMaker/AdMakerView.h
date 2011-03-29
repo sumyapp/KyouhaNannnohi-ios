@@ -8,21 +8,19 @@
 #import <UIKit/UIKit.h>
 #import "AdMakerDelegate.h"
 
-@interface AdMakerView : UIViewController <UIWebViewDelegate> {
-	id<AdMakerDelegate> delegate;
+@protocol AdMakerDelegate;
 
-	BOOL useSafari;		// とび先URLの表示にSafariを使うか
+@interface AdMakerView : UIWebView <UIWebViewDelegate> {
+	id<AdMakerDelegate> delegate;
 }
 
-@property(nonatomic,assign) id <AdMakerDelegate> delegate;
-
-@property(nonatomic) BOOL useSafari;
-
++(AdMakerView*)sharedManager;
 -(void)adMakerDelegate:(id)_delegate;
--(void)setFrame:(CGRect)frame;
--(void)start;	// 表示開始
+-(id)myInitWithFrame:(CGRect)frame; //広告の表示位置
+-(void)deleteInstance; //AdMakerの削除
 
-- (void)viewWillAppear;
+- (void)viewDidAppear;
 - (void)viewWillDisappear;
+
 
 @end

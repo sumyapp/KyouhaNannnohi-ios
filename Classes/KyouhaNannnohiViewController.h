@@ -31,7 +31,9 @@
 	int tanjyuoubiNum;
 	int imibiNum;
 	int kinenbiNum;
-	
+    
+    BOOL _nowLoading;
+    
 	//ad
 	SmAddView *smAddView;
 }

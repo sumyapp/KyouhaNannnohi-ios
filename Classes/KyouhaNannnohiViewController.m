@@ -13,7 +13,8 @@
 @synthesize resultArray;
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"viewWillAppear");
+    NSLog(@"viewWillAppear");    
+    [self todayButtonPush];
     [smAddView startAd];
 }
 
@@ -81,18 +82,28 @@
 	[self setDateLabel:month day:day];
 }
 - (IBAction)searchButtonPush{
-	if([UIApplication sharedApplication].networkActivityIndicatorVisible){
+    Reachability *reach = [Reachability reachabilityWithHostName:@"www.google.com"];
+	if ([reach currentReachabilityStatus] == NotReachable) {		
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"接続失敗"
+														message:@"ネットワークから情報を手に入れることができませんでした。接続状況を調べて再度試してみてください。"
+													   delegate:nil cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		
+		[alert show];
+		[alert release];
+        return;
+	}
+    
+	if(_nowLoading){
 		return;
 	}
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    _nowLoading = YES;
 	
 	WhatDayTodayApiModel *wdt = [[[WhatDayTodayApiModel alloc] init] retain];
 	wdt.delegate = self;
-	
 	[wdt loadData:searchMonth
 			  day:searchDay];
-	
-	//[wdt release];
 }
 - (void)WhatDayTodayApiModelDelegateDidFinish:(WhatDayTodayApiModel *)controller {
 	resultArray = [[NSArray arrayWithArray:controller.resultData] retain];
@@ -104,7 +115,7 @@
 	[table reloadData];
 	
 	if([resultArray count] == 0) {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"結果失敗"
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"検索失敗"
 														message:@"検索結果がありませんでした。日付を変えて試してみてください。"
 													   delegate:self
 											  cancelButtonTitle:@"OK"
@@ -117,6 +128,7 @@
 		[self tableHiddenDisable];
 	}
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    _nowLoading = NO;
 }
 - (void)setDateLabel:(int)month
 				 day:(int)day{
@@ -194,39 +206,25 @@
 	[picker setShowsSelectionIndicator:YES];         //インジケーター
 	[self.view addSubview:picker];
 	
-	
-	Reachability *reach = [Reachability reachabilityWithHostName:@"www.google.com"];
-	if ([reach currentReachabilityStatus] == NotReachable) {		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"接続失敗"
-														message:@"ネットワークから情報を手に入れることができませんでした。接続状況を調べて再度試してみてください。"
-													   delegate:nil cancelButtonTitle:@"OK"
-											  otherButtonTitles:nil];
-		
-		[alert show];
-		[alert release];
-	}
-	else {
-		[self todayButtonPush];
-		//	広告
-		smAddView = [[SmAddView alloc] initWithFrame:CGRectMake(0, 410, 320, 50)
-                                masterViewController:self
-                                           isAdInTop:NO
-                                    smaddAdServerUrl:@"https://smaddnet.appspot.com/apps/351885110"
-                              smaddAdServerSecretKey:@"zN2M6FvBQ3X1saT5"
-                          enableAdNameSortByPriority:@"admaker,admob,iad,housead"];
-        [self.view addSubview:smAddView];
-        
-        if (&UIApplicationDidEnterBackgroundNotification) {
-            [[NSNotificationCenter defaultCenter] addObserver:self
-                                                     selector:@selector(viewWillDisappear:)
-                                                         name:UIApplicationDidEnterBackgroundNotification
-                                                       object:[UIApplication sharedApplication]];
-            [[NSNotificationCenter defaultCenter] addObserver:self
-                                                     selector:@selector(viewWillAppear:)
-                                                         name:UIApplicationDidBecomeActiveNotification
-                                                       object:[UIApplication sharedApplication]];
-        }
-	}
+    //	広告
+    smAddView = [[SmAddView alloc] initWithFrame:CGRectMake(0, 410, 320, 50)
+                            masterViewController:self
+                                       isAdInTop:NO
+                                smaddAdServerUrl:@"https://smaddnet.appspot.com/apps/351885110"
+                          smaddAdServerSecretKey:@"zN2M6FvBQ3X1saT5"
+                      enableAdNameSortByPriority:@"admaker,admob,iad,housead"];
+    [self.view addSubview:smAddView];    
+    
+    if (&UIApplicationDidEnterBackgroundNotification) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(viewWillDisappear:)
+                                                     name:UIApplicationDidEnterBackgroundNotification
+                                                   object:[UIApplication sharedApplication]];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(viewWillAppear:)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:[UIApplication sharedApplication]];
+    }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -276,7 +274,7 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView 
 		 cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	int i;
+	int i = 0;
 	//NSLog(@"indexPath.section[%d]", indexPath.section);
 	switch (indexPath.section) {
 		case 0:
@@ -324,7 +322,7 @@
 
 // Override to support row selection in the table view.
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-	int i;
+	int i = 0;
 	//NSLog(@"indexPath.section[%d]", indexPath.section);
 	switch (indexPath.section) {
 		case 0:
@@ -437,7 +435,7 @@
 	return 4;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	int i;
+	int i = 0;
 	//NSLog(@"%d", section);
 	switch (section) {
 		case 0:
@@ -499,6 +497,13 @@
 
 
 - (void)dealloc {
+    [smAddView stopAd];
+    [smAddView release], smAddView = nil;
+    [table release];
+    [resultArray release];
+    [picker release];
+    [copyStringTmp release];
+    
     [super dealloc];
 }
 

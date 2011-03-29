@@ -288,18 +288,11 @@
 	SMADD_LOG(@"-[AdViewController tryNextAdLoad], loadingAdPriorityNumber = %d, [enableAdNamesSortByPriority count] = %d", loadingAdPriorityNumber, [enableAdNamesSortByPriority count])
 	if([enableAdNamesSortByPriority count] <= loadingAdPriorityNumber) {
 		SMADD_LOG(@"AdService is all failed")
-        if(retryCount < SMADD_RETRY_COUNT_MAX) {
-            SMADD_LOG(@"But, retry")
-            retryCount++;
-            loadingAdPriorityNumber = -1;
-            [self tryNextAdLoad];
-        }
-        else {
-            SMADD_LOG(@"adError = YES")
-            adError = YES;
-            adLoading = NO;
-            return;
-        }
+        SMADD_LOG(@"adError = YES")
+        adError = YES;
+        adLoading = NO;
+        return;
+        
 	}
     
     /**
@@ -519,9 +512,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 	SMADD_LOG_METHOD
 	if(adMaker == nil) {
         SMADD_LOG(@"AdMaker alloc init")
-		adMaker = [[AdMakerView alloc] init];
+		adMaker = [AdMakerView sharedManager];
         [adMaker adMakerDelegate:self];
-        [adMaker start];
 	}
 	else {
 		SMADD_LOG(@"showAdMaker: EXCEPTION_ERROR")
@@ -531,8 +523,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)removeAdMaker {
 	SMADD_LOG_METHOD
     [adMaker adMakerDelegate:nil];
-    [adMaker setDelegate:nil];
-	[adMaker.view removeFromSuperview];
+	[adMaker removeFromSuperview];
+    [adMaker deleteInstance];
 	[adMaker release];
 	adMaker = nil;
 }
@@ -548,8 +540,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 
 - (void)requestAdSuccess {
     SMADD_LOG_METHOD
-    [adMaker setFrame:CGRectMake(0, 0, 320, 50)];
-    [self addSubview:adMaker.view];
+    [adMaker myInitWithFrame:CGRectMake(0, 0, 320, 50)];
+    [self addSubview:adMaker];
     [self reciveAdStatus:SMADD_ADMAKER_NAME
                 dataType:SMADD_AD_LOAD_SUCCESS];
 }
@@ -1027,6 +1019,7 @@ enableAdNameSortByPriority:(NSString*)adNames {
         // Initialization code.
 		[self setBackgroundColor:[UIColor clearColor]];
 		[self setOpaque:NO];
+        [self setMasterViewController:controller];
         [self setSmaddAdServerUrl:serverUrlString];
         [self setSmaddAdServerSecretKey:secretKey];
         [self setEnableAdNameSortByPriority:adNames];

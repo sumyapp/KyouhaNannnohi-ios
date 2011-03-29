@@ -20,7 +20,7 @@
 	NSURL* url = [NSURL URLWithString:[arr objectAtIndex:0]];
 	NSString* content = [arr objectAtIndex:1];
 	
-	NSMutableURLRequest* request = [[NSMutableURLRequest alloc]initWithURL:url];
+	NSMutableURLRequest* request = [[[NSMutableURLRequest alloc]initWithURL:url] autorelease];
 	[request setHTTPMethod:@"POST"];
 	[request setHTTPBody:[content dataUsingEncoding:NSUTF8StringEncoding]];
 
@@ -57,8 +57,8 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-	UIAlertView * base = [[UIAlertView alloc] initWithTitle:@"ネットワークエラー" message:@"アクセスできませんでした" 
-						  													   delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+	UIAlertView * base = [[[UIAlertView alloc] initWithTitle:@"ネットワークエラー" message:@"アクセスできませんでした" 
+						  													   delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil] autorelease];
 								
 	[base show];
 	[[NSNotificationCenter defaultCenter]

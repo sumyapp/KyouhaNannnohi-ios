@@ -198,4 +198,14 @@
 	[base release];
 }
 
+- (void)dealloc {
+    NSLog(@"WhatDayTodayApiModel - dealloc");
+    [resultData release];
+    [tempXMLString release];
+    [nowElements release];
+    [kinenbiTitles release];
+	[nowKinenbiTitle release];
+    
+    [super dealloc];
+}
 @end

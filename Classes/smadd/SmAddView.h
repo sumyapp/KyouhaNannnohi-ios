@@ -48,7 +48,6 @@
 //TODO: remove not use adservice's define
 //common
 #define SMADD_TIMEOUT_TIME 10
-#define SMADD_RETRY_COUNT_MAX 2
 //admob
 #define SMADD_ADMOB_NAME @"admob"
 #define SMADD_ADMOB_PUBLISER_ID @"a14b588f78270d7"
