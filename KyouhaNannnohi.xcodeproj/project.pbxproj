@@ -39,6 +39,8 @@
 		AC6128F416ECB840003EBA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F216ECB834003EBA22 /* CoreTelephony.framework */; };
 		AC6128F516ECB840003EBA22 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F016ECB821003EBA22 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AC6128F616ECB840003EBA22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128EE16ECB80E003EBA22 /* StoreKit.framework */; };
+		AC6128F916ECBAEC003EBA22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F716ECBAE5003EBA22 /* QuartzCore.framework */; };
+		AC6128FC16ECBAFB003EBA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128FA16ECBAF5003EBA22 /* CoreLocation.framework */; };
 		ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62DE13421D9B00ACE658 /* Reachability.m */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
@@ -128,6 +130,8 @@
 		AC6128EE16ECB80E003EBA22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AC6128F016ECB821003EBA22 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AC6128F216ECB834003EBA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AC6128F716ECBAE5003EBA22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AC6128FA16ECBAF5003EBA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ACCB62DD13421D9B00ACE658 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		ACCB62DE13421D9B00ACE658 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -157,6 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6128FC16ECBAFB003EBA22 /* CoreLocation.framework in Frameworks */,
+				AC6128F916ECBAEC003EBA22 /* QuartzCore.framework in Frameworks */,
 				AC6128F416ECB840003EBA22 /* CoreTelephony.framework in Frameworks */,
 				AC6128F516ECB840003EBA22 /* AdSupport.framework in Frameworks */,
 				AC6128F616ECB840003EBA22 /* StoreKit.framework in Frameworks */,
@@ -184,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				AC61289316ECB3D4003EBA22 /* AdStir v1.4.0 */,
+				AC6128FA16ECBAF5003EBA22 /* CoreLocation.framework */,
+				AC6128F716ECBAE5003EBA22 /* QuartzCore.framework */,
 				AC6128F216ECB834003EBA22 /* CoreTelephony.framework */,
 				AC6128F016ECB821003EBA22 /* AdSupport.framework */,
 				AC6128EE16ECB80E003EBA22 /* StoreKit.framework */,
@@ -490,8 +498,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
@@ -512,8 +518,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
@@ -530,8 +534,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				OTHER_LDFLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -550,8 +554,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
-					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
 					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
@@ -569,8 +571,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				OTHER_LDFLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -584,8 +586,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				OTHER_LDFLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
