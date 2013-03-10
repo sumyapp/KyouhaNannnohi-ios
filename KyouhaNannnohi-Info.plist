@@ -35,20 +35,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.sumyapp.kyouha_nannohi</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.sumyapp.kyouha_nannohi</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
 			<string>com.sumyapp.KyouhaNannnohi</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.sumyapp.kyouhaNannnohi</string>
+				<string>com.sumyapp.whattoday</string>
 			</array>
 		</dict>
 		<dict>

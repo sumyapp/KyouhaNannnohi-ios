@@ -41,6 +41,7 @@
 		AC6128F616ECB840003EBA22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128EE16ECB80E003EBA22 /* StoreKit.framework */; };
 		AC6128F916ECBAEC003EBA22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F716ECBAE5003EBA22 /* QuartzCore.framework */; };
 		AC6128FC16ECBAFB003EBA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128FA16ECBAF5003EBA22 /* CoreLocation.framework */; };
+		AC61290016ECBE73003EBA22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6128FF16ECBE73003EBA22 /* Default-568h@2x.png */; };
 		ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62DE13421D9B00ACE658 /* Reachability.m */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
@@ -132,6 +133,7 @@
 		AC6128F216ECB834003EBA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		AC6128F716ECBAE5003EBA22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AC6128FA16ECBAF5003EBA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC6128FF16ECBE73003EBA22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ACCB62DD13421D9B00ACE658 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		ACCB62DE13421D9B00ACE658 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -224,6 +226,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				AC6128FF16ECBE73003EBA22 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -438,6 +441,7 @@
 				AC6128E916ECB402003EBA22 /* Adlantis.strings in Resources */,
 				AC6128EA16ECB402003EBA22 /* CHANGELOG.md in Resources */,
 				AC6128EC16ECB402003EBA22 /* README.md in Resources */,
+				AC61290016ECBE73003EBA22 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,13 +586,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
