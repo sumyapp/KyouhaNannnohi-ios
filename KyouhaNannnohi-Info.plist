@@ -29,6 +29,39 @@
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.sumyapp.kyouha_nannohi</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.sumyapp.kyouha_nannohi</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.sumyapp.KyouhaNannnohi</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.sumyapp.kyouhaNannnohi</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.sumyapp.KyouhaNannnohi_short</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>whattoday</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1.2.2</string>
 	<key>LSRequiresIPhoneOS</key>
