@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
 #import "WhatDayTodayApiModel.h"
+#import "AdstirView.h"
 
 @interface KyouhaNannnohiViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, WhatDayTodayApiModelDelegate, UIAlertViewDelegate> {
 	UIPickerView* picker;
@@ -53,5 +54,7 @@
 
 @property(nonatomic, retain) UITableView *table;
 @property(nonatomic, retain) NSArray *resultArray;
+@property (nonatomic, retain) AdstirView* adview; //プロパティーで宣言すると、管理が簡単になります。
+
 @end
 

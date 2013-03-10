@@ -15,6 +15,27 @@
 		2899E5220DE3E06400AC0155 /* KyouhaNannnohiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* KyouhaNannnohiViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* KyouhaNannnohiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* KyouhaNannnohiViewController.m */; };
+		AC6128A116ECB3D4003EBA22 /* libAdStir-Adlantis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61289716ECB3D4003EBA22 /* libAdStir-Adlantis.a */; };
+		AC6128A316ECB3D4003EBA22 /* libAdStir-GoogleAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61289916ECB3D4003EBA22 /* libAdStir-GoogleAdMob.a */; };
+		AC6128A416ECB3D4003EBA22 /* libAdStir-iAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61289A16ECB3D4003EBA22 /* libAdStir-iAd.a */; };
+		AC6128A916ECB3D4003EBA22 /* libAdStir.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC61289F16ECB3D4003EBA22 /* libAdStir.a */; };
+		AC6128B616ECB3ED003EBA22 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128B516ECB3ED003EBA22 /* libGoogleAdMobAds.a */; };
+		AC6128BA16ECB3F3003EBA22 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128B916ECB3F3003EBA22 /* JSONKit.m */; };
+		AC6128DF16ECB402003EBA22 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128C216ECB401003EBA22 /* AFHTTPClient.m */; };
+		AC6128E016ECB402003EBA22 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128C416ECB401003EBA22 /* AFHTTPRequestOperation.m */; };
+		AC6128E116ECB402003EBA22 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128C616ECB401003EBA22 /* AFImageRequestOperation.m */; };
+		AC6128E216ECB402003EBA22 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128C816ECB401003EBA22 /* AFJSONRequestOperation.m */; };
+		AC6128E316ECB402003EBA22 /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128CA16ECB401003EBA22 /* AFJSONUtilities.m */; };
+		AC6128E416ECB402003EBA22 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128CC16ECB401003EBA22 /* AFNetworkActivityIndicatorManager.m */; };
+		AC6128E516ECB402003EBA22 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128CF16ECB401003EBA22 /* AFPropertyListRequestOperation.m */; };
+		AC6128E616ECB402003EBA22 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128D116ECB401003EBA22 /* AFURLConnectionOperation.m */; };
+		AC6128E716ECB402003EBA22 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128D316ECB401003EBA22 /* AFXMLRequestOperation.m */; };
+		AC6128E816ECB402003EBA22 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128D516ECB401003EBA22 /* UIImageView+AFNetworking.m */; };
+		AC6128E916ECB402003EBA22 /* Adlantis.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC6128D616ECB401003EBA22 /* Adlantis.strings */; };
+		AC6128EA16ECB402003EBA22 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6128DA16ECB402003EBA22 /* CHANGELOG.md */; };
+		AC6128EB16ECB402003EBA22 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128DC16ECB402003EBA22 /* JSONKit.m */; };
+		AC6128EC16ECB402003EBA22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6128DD16ECB402003EBA22 /* README.md */; };
+		AC6128ED16ECB402003EBA22 /* libadlantis_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */; };
 		ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62DE13421D9B00ACE658 /* Reachability.m */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
@@ -50,6 +71,57 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KyouhaNannnohi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KyouhaNannnohi_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* KyouhaNannnohi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KyouhaNannnohi-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AC61289416ECB3D4003EBA22 /* AdstirAdBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdstirAdBase.h; sourceTree = "<group>"; };
+		AC61289516ECB3D4003EBA22 /* AdStirRTBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdStirRTBView.h; sourceTree = "<group>"; };
+		AC61289616ECB3D4003EBA22 /* AdstirView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdstirView.h; sourceTree = "<group>"; };
+		AC61289716ECB3D4003EBA22 /* libAdStir-Adlantis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdStir-Adlantis.a"; sourceTree = "<group>"; };
+		AC61289916ECB3D4003EBA22 /* libAdStir-GoogleAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdStir-GoogleAdMob.a"; sourceTree = "<group>"; };
+		AC61289A16ECB3D4003EBA22 /* libAdStir-iAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAdStir-iAd.a"; sourceTree = "<group>"; };
+		AC61289F16ECB3D4003EBA22 /* libAdStir.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdStir.a; sourceTree = "<group>"; };
+		AC6128AC16ECB3ED003EBA22 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		AC6128AD16ECB3ED003EBA22 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		AC6128AE16ECB3ED003EBA22 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		AC6128AF16ECB3ED003EBA22 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		AC6128B016ECB3ED003EBA22 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		AC6128B116ECB3ED003EBA22 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		AC6128B216ECB3ED003EBA22 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		AC6128B316ECB3ED003EBA22 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		AC6128B416ECB3ED003EBA22 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		AC6128B516ECB3ED003EBA22 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		AC6128B816ECB3F3003EBA22 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		AC6128B916ECB3F3003EBA22 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		AC6128BC16ECB401003EBA22 /* AdlantisAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdlantisAd.h; sourceTree = "<group>"; };
+		AC6128BD16ECB401003EBA22 /* AdlantisAdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdlantisAdManager.h; sourceTree = "<group>"; };
+		AC6128BE16ECB401003EBA22 /* AdLantisConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdLantisConversion.h; sourceTree = "<group>"; };
+		AC6128BF16ECB401003EBA22 /* AdlantisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdlantisView.h; sourceTree = "<group>"; };
+		AC6128C116ECB401003EBA22 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		AC6128C216ECB401003EBA22 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		AC6128C316ECB401003EBA22 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		AC6128C416ECB401003EBA22 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		AC6128C516ECB401003EBA22 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		AC6128C616ECB401003EBA22 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		AC6128C716ECB401003EBA22 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		AC6128C816ECB401003EBA22 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		AC6128C916ECB401003EBA22 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		AC6128CA16ECB401003EBA22 /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		AC6128CB16ECB401003EBA22 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		AC6128CC16ECB401003EBA22 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		AC6128CD16ECB401003EBA22 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		AC6128CE16ECB401003EBA22 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		AC6128CF16ECB401003EBA22 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		AC6128D016ECB401003EBA22 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		AC6128D116ECB401003EBA22 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		AC6128D216ECB401003EBA22 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		AC6128D316ECB401003EBA22 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		AC6128D416ECB401003EBA22 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		AC6128D516ECB401003EBA22 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		AC6128D716ECB401003EBA22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Adlantis.strings; sourceTree = "<group>"; };
+		AC6128D816ECB401003EBA22 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Adlantis.strings; sourceTree = "<group>"; };
+		AC6128DA16ECB402003EBA22 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		AC6128DB16ECB402003EBA22 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		AC6128DC16ECB402003EBA22 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		AC6128DD16ECB402003EBA22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libadlantis_ios_sdk.a; sourceTree = "<group>"; };
 		ACCB62DD13421D9B00ACE658 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		ACCB62DE13421D9B00ACE658 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -87,6 +159,12 @@
 				ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */,
 				ACCB630713421F5C00ACE658 /* AudioToolbox.framework in Frameworks */,
 				ACCB63121342212200ACE658 /* iAd.framework in Frameworks */,
+				AC6128A116ECB3D4003EBA22 /* libAdStir-Adlantis.a in Frameworks */,
+				AC6128A316ECB3D4003EBA22 /* libAdStir-GoogleAdMob.a in Frameworks */,
+				AC6128A416ECB3D4003EBA22 /* libAdStir-iAd.a in Frameworks */,
+				AC6128A916ECB3D4003EBA22 /* libAdStir.a in Frameworks */,
+				AC6128B616ECB3ED003EBA22 /* libGoogleAdMobAds.a in Frameworks */,
+				AC6128ED16ECB402003EBA22 /* libadlantis_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +174,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AC61289316ECB3D4003EBA22 /* AdStir v1.4.0 */,
+				ACCB630113421F3F00ACE658 /* MediaPlayer.framework */,
+				ACCB630313421F4600ACE658 /* MessageUI.framework */,
+				ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */,
+				ACCB63101342211800ACE658 /* iAd.framework */,
 				ACCB62DD13421D9B00ACE658 /* Reachability.h */,
 				ACCB62DE13421D9B00ACE658 /* Reachability.m */,
 				ACD1BFAA1108323D00CC1179 /* myConnection.h */,
@@ -163,16 +246,109 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACCB63101342211800ACE658 /* iAd.framework */,
-				ACCB630313421F4600ACE658 /* MessageUI.framework */,
-				ACCB630113421F3F00ACE658 /* MediaPlayer.framework */,
-				ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				ACD1BF9911082CA700CC1179 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC61289316ECB3D4003EBA22 /* AdStir v1.4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128BB16ECB401003EBA22 /* adlantis_sdk */,
+				AC6128B716ECB3F3003EBA22 /* JSONKit */,
+				AC6128AB16ECB3ED003EBA22 /* GoogleAdMobAdsSdkiOS-6.3.0 */,
+				AC61289416ECB3D4003EBA22 /* AdstirAdBase.h */,
+				AC61289516ECB3D4003EBA22 /* AdStirRTBView.h */,
+				AC61289616ECB3D4003EBA22 /* AdstirView.h */,
+				AC61289716ECB3D4003EBA22 /* libAdStir-Adlantis.a */,
+				AC61289916ECB3D4003EBA22 /* libAdStir-GoogleAdMob.a */,
+				AC61289A16ECB3D4003EBA22 /* libAdStir-iAd.a */,
+				AC61289F16ECB3D4003EBA22 /* libAdStir.a */,
+			);
+			path = "AdStir v1.4.0";
+			sourceTree = "<group>";
+		};
+		AC6128AB16ECB3ED003EBA22 /* GoogleAdMobAdsSdkiOS-6.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128AC16ECB3ED003EBA22 /* GADAdMobExtras.h */,
+				AC6128AD16ECB3ED003EBA22 /* GADAdNetworkExtras.h */,
+				AC6128AE16ECB3ED003EBA22 /* GADAdSize.h */,
+				AC6128AF16ECB3ED003EBA22 /* GADBannerView.h */,
+				AC6128B016ECB3ED003EBA22 /* GADBannerViewDelegate.h */,
+				AC6128B116ECB3ED003EBA22 /* GADInterstitial.h */,
+				AC6128B216ECB3ED003EBA22 /* GADInterstitialDelegate.h */,
+				AC6128B316ECB3ED003EBA22 /* GADRequest.h */,
+				AC6128B416ECB3ED003EBA22 /* GADRequestError.h */,
+				AC6128B516ECB3ED003EBA22 /* libGoogleAdMobAds.a */,
+			);
+			path = "GoogleAdMobAdsSdkiOS-6.3.0";
+			sourceTree = "<group>";
+		};
+		AC6128B716ECB3F3003EBA22 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128B816ECB3F3003EBA22 /* JSONKit.h */,
+				AC6128B916ECB3F3003EBA22 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		AC6128BB16ECB401003EBA22 /* adlantis_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128BC16ECB401003EBA22 /* AdlantisAd.h */,
+				AC6128BD16ECB401003EBA22 /* AdlantisAdManager.h */,
+				AC6128BE16ECB401003EBA22 /* AdLantisConversion.h */,
+				AC6128BF16ECB401003EBA22 /* AdlantisView.h */,
+				AC6128C016ECB401003EBA22 /* AFNetworking */,
+				AC6128D616ECB401003EBA22 /* Adlantis.strings */,
+				AC6128D916ECB401003EBA22 /* JSONKit */,
+				AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */,
+			);
+			path = adlantis_sdk;
+			sourceTree = "<group>";
+		};
+		AC6128C016ECB401003EBA22 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128C116ECB401003EBA22 /* AFHTTPClient.h */,
+				AC6128C216ECB401003EBA22 /* AFHTTPClient.m */,
+				AC6128C316ECB401003EBA22 /* AFHTTPRequestOperation.h */,
+				AC6128C416ECB401003EBA22 /* AFHTTPRequestOperation.m */,
+				AC6128C516ECB401003EBA22 /* AFImageRequestOperation.h */,
+				AC6128C616ECB401003EBA22 /* AFImageRequestOperation.m */,
+				AC6128C716ECB401003EBA22 /* AFJSONRequestOperation.h */,
+				AC6128C816ECB401003EBA22 /* AFJSONRequestOperation.m */,
+				AC6128C916ECB401003EBA22 /* AFJSONUtilities.h */,
+				AC6128CA16ECB401003EBA22 /* AFJSONUtilities.m */,
+				AC6128CB16ECB401003EBA22 /* AFNetworkActivityIndicatorManager.h */,
+				AC6128CC16ECB401003EBA22 /* AFNetworkActivityIndicatorManager.m */,
+				AC6128CD16ECB401003EBA22 /* AFNetworking.h */,
+				AC6128CE16ECB401003EBA22 /* AFPropertyListRequestOperation.h */,
+				AC6128CF16ECB401003EBA22 /* AFPropertyListRequestOperation.m */,
+				AC6128D016ECB401003EBA22 /* AFURLConnectionOperation.h */,
+				AC6128D116ECB401003EBA22 /* AFURLConnectionOperation.m */,
+				AC6128D216ECB401003EBA22 /* AFXMLRequestOperation.h */,
+				AC6128D316ECB401003EBA22 /* AFXMLRequestOperation.m */,
+				AC6128D416ECB401003EBA22 /* UIImageView+AFNetworking.h */,
+				AC6128D516ECB401003EBA22 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		AC6128D916ECB401003EBA22 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				AC6128DA16ECB402003EBA22 /* CHANGELOG.md */,
+				AC6128DB16ECB402003EBA22 /* JSONKit.h */,
+				AC6128DC16ECB402003EBA22 /* JSONKit.m */,
+				AC6128DD16ECB402003EBA22 /* README.md */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +385,8 @@
 				Japanese,
 				French,
 				German,
+				en,
+				ja,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -237,6 +415,9 @@
 				ACF2411D123CD33200865987 /* Icon.png in Resources */,
 				ACF2411E123CD33200865987 /* Icon@2x.png in Resources */,
 				ACCB634C13423E5E00ACE658 /* Default@2x.png in Resources */,
+				AC6128E916ECB402003EBA22 /* Adlantis.strings in Resources */,
+				AC6128EA16ECB402003EBA22 /* CHANGELOG.md in Resources */,
+				AC6128EC16ECB402003EBA22 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +434,34 @@
 				ACD1BFA31108302000CC1179 /* WhatDayTodayApiModel.m in Sources */,
 				ACD1BFAC1108323D00CC1179 /* myConnection.m in Sources */,
 				ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */,
+				AC6128BA16ECB3F3003EBA22 /* JSONKit.m in Sources */,
+				AC6128DF16ECB402003EBA22 /* AFHTTPClient.m in Sources */,
+				AC6128E016ECB402003EBA22 /* AFHTTPRequestOperation.m in Sources */,
+				AC6128E116ECB402003EBA22 /* AFImageRequestOperation.m in Sources */,
+				AC6128E216ECB402003EBA22 /* AFJSONRequestOperation.m in Sources */,
+				AC6128E316ECB402003EBA22 /* AFJSONUtilities.m in Sources */,
+				AC6128E416ECB402003EBA22 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				AC6128E516ECB402003EBA22 /* AFPropertyListRequestOperation.m in Sources */,
+				AC6128E616ECB402003EBA22 /* AFURLConnectionOperation.m in Sources */,
+				AC6128E716ECB402003EBA22 /* AFXMLRequestOperation.m in Sources */,
+				AC6128E816ECB402003EBA22 /* UIImageView+AFNetworking.m in Sources */,
+				AC6128EB16ECB402003EBA22 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC6128D616ECB401003EBA22 /* Adlantis.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC6128D716ECB401003EBA22 /* en */,
+				AC6128D816ECB401003EBA22 /* ja */,
+			);
+			name = Adlantis.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -275,6 +480,9 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
 				);
 				PRODUCT_NAME = KyouhaNannnohi;
 			};
@@ -294,6 +502,9 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
 				);
 				PRODUCT_NAME = KyouhaNannnohi;
 			};
@@ -329,6 +540,9 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMaker\"",
 					"\"$(SRCROOT)/Classes/smadd/AdMob\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/GoogleAdMobAdsSdkiOS-6.3.0\"",
+					"\"$(SRCROOT)/Classes/AdStir v1.4.0/adlantis_sdk\"",
 				);
 				PRODUCT_NAME = KyouhaNannnohi;
 			};
