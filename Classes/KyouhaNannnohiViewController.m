@@ -15,12 +15,12 @@
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"viewWillAppear");    
     [self todayButtonPush];
-    [smAddView startAd];
+    //[smAddView startAd];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     NSLog(@"viewWillDisappear");
-    [smAddView stopAd];
+    //[smAddView stopAd];
 }
 
 - (IBAction)todayButtonPush{
@@ -207,6 +207,7 @@
 	[self.view addSubview:picker];
 	
     //	広告
+    /*
     smAddView = [[SmAddView alloc] initWithFrame:CGRectMake(0, 410, 320, 50)
                             masterViewController:self
                                        isAdInTop:NO
@@ -214,7 +215,7 @@
                           smaddAdServerSecretKey:@"zN2M6FvBQ3X1saT5"
                       enableAdNameSortByPriority:@"admaker,admob,iad,housead"];
     [self.view addSubview:smAddView];    
-    
+    */
     if (&UIApplicationDidEnterBackgroundNotification) {
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(viewWillDisappear:)
@@ -497,8 +498,8 @@
 
 
 - (void)dealloc {
-    [smAddView stopAd];
-    [smAddView release], smAddView = nil;
+//    [smAddView stopAd];
+//    [smAddView release], smAddView = nil;
     [table release];
     [resultArray release];
     [picker release];

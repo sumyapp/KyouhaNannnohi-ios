@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
 #import "WhatDayTodayApiModel.h"
-#import "SmAddView.h"
 
 @interface KyouhaNannnohiViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, WhatDayTodayApiModelDelegate, UIAlertViewDelegate> {
 	UIPickerView* picker;
@@ -35,7 +34,7 @@
     BOOL _nowLoading;
     
 	//ad
-	SmAddView *smAddView;
+	// SmAddView *smAddView;
 }
 - (IBAction)todayButtonPush;
 - (IBAction)tomorrowButtonPush;

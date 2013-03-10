@@ -16,12 +16,6 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* KyouhaNannnohiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* KyouhaNannnohiViewController.m */; };
 		ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62DE13421D9B00ACE658 /* Reachability.m */; };
-		ACCB62E913421E6500ACE658 /* AdViewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62E213421E6500ACE658 /* AdViewTemplate.m */; };
-		ACCB62EA13421E6500ACE658 /* QuickWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62E413421E6500ACE658 /* QuickWebViewController.m */; };
-		ACCB62EB13421E6500ACE658 /* QuickWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCB62E513421E6500ACE658 /* QuickWebViewController.xib */; };
-		ACCB62EC13421E6500ACE658 /* SmAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62E813421E6500ACE658 /* SmAddView.m */; };
-		ACCB62F213421EC200ACE658 /* libAdMaker_dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62F013421EC200ACE658 /* libAdMaker_dev.a */; };
-		ACCB62FD13421EEC00ACE658 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62FB13421EEC00ACE658 /* libGoogleAdMobAds.a */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
 		ACCB630713421F5C00ACE658 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */; };
@@ -58,25 +52,6 @@
 		8D1107310486CEB800E47090 /* KyouhaNannnohi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KyouhaNannnohi-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		ACCB62DD13421D9B00ACE658 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		ACCB62DE13421D9B00ACE658 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		ACCB62E113421E6500ACE658 /* AdViewTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewTemplate.h; sourceTree = "<group>"; };
-		ACCB62E213421E6500ACE658 /* AdViewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewTemplate.m; sourceTree = "<group>"; };
-		ACCB62E313421E6500ACE658 /* QuickWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickWebViewController.h; sourceTree = "<group>"; };
-		ACCB62E413421E6500ACE658 /* QuickWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickWebViewController.m; sourceTree = "<group>"; };
-		ACCB62E513421E6500ACE658 /* QuickWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickWebViewController.xib; sourceTree = "<group>"; };
-		ACCB62E613421E6500ACE658 /* SmAddGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmAddGlobal.h; sourceTree = "<group>"; };
-		ACCB62E713421E6500ACE658 /* SmAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmAddView.h; sourceTree = "<group>"; };
-		ACCB62E813421E6500ACE658 /* SmAddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmAddView.m; sourceTree = "<group>"; };
-		ACCB62EE13421EC200ACE658 /* AdMakerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMakerDelegate.h; sourceTree = "<group>"; };
-		ACCB62EF13421EC200ACE658 /* AdMakerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMakerView.h; sourceTree = "<group>"; };
-		ACCB62F013421EC200ACE658 /* libAdMaker_dev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMaker_dev.a; sourceTree = "<group>"; };
-		ACCB62F113421EC200ACE658 /* libAdMaker_sim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMaker_sim.a; sourceTree = "<group>"; };
-		ACCB62F513421EEC00ACE658 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
-		ACCB62F613421EEC00ACE658 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
-		ACCB62F713421EEC00ACE658 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
-		ACCB62F813421EEC00ACE658 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
-		ACCB62F913421EEC00ACE658 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
-		ACCB62FA13421EEC00ACE658 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
-		ACCB62FB13421EEC00ACE658 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		ACCB630113421F3F00ACE658 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		ACCB630313421F4600ACE658 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -111,8 +86,6 @@
 				ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */,
 				ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */,
 				ACCB630713421F5C00ACE658 /* AudioToolbox.framework in Frameworks */,
-				ACCB62F213421EC200ACE658 /* libAdMaker_dev.a in Frameworks */,
-				ACCB62FD13421EEC00ACE658 /* libGoogleAdMobAds.a in Frameworks */,
 				ACCB63121342212200ACE658 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,7 +96,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				ACCB62E013421E6500ACE658 /* smadd */,
 				ACCB62DD13421D9B00ACE658 /* Reachability.h */,
 				ACCB62DE13421D9B00ACE658 /* Reachability.m */,
 				ACD1BFAA1108323D00CC1179 /* myConnection.h */,
@@ -203,48 +175,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ACCB62E013421E6500ACE658 /* smadd */ = {
-			isa = PBXGroup;
-			children = (
-				ACCB62F413421EEC00ACE658 /* AdMob */,
-				ACCB62ED13421EC200ACE658 /* AdMaker */,
-				ACCB62E113421E6500ACE658 /* AdViewTemplate.h */,
-				ACCB62E213421E6500ACE658 /* AdViewTemplate.m */,
-				ACCB62E313421E6500ACE658 /* QuickWebViewController.h */,
-				ACCB62E413421E6500ACE658 /* QuickWebViewController.m */,
-				ACCB62E513421E6500ACE658 /* QuickWebViewController.xib */,
-				ACCB62E613421E6500ACE658 /* SmAddGlobal.h */,
-				ACCB62E713421E6500ACE658 /* SmAddView.h */,
-				ACCB62E813421E6500ACE658 /* SmAddView.m */,
-			);
-			path = smadd;
-			sourceTree = "<group>";
-		};
-		ACCB62ED13421EC200ACE658 /* AdMaker */ = {
-			isa = PBXGroup;
-			children = (
-				ACCB62EE13421EC200ACE658 /* AdMakerDelegate.h */,
-				ACCB62EF13421EC200ACE658 /* AdMakerView.h */,
-				ACCB62F013421EC200ACE658 /* libAdMaker_dev.a */,
-				ACCB62F113421EC200ACE658 /* libAdMaker_sim.a */,
-			);
-			path = AdMaker;
-			sourceTree = "<group>";
-		};
-		ACCB62F413421EEC00ACE658 /* AdMob */ = {
-			isa = PBXGroup;
-			children = (
-				ACCB62F513421EEC00ACE658 /* GADBannerView.h */,
-				ACCB62F613421EEC00ACE658 /* GADBannerViewDelegate.h */,
-				ACCB62F713421EEC00ACE658 /* GADInterstitial.h */,
-				ACCB62F813421EEC00ACE658 /* GADInterstitialDelegate.h */,
-				ACCB62F913421EEC00ACE658 /* GADRequest.h */,
-				ACCB62FA13421EEC00ACE658 /* GADRequestError.h */,
-				ACCB62FB13421EEC00ACE658 /* libGoogleAdMobAds.a */,
-			);
-			path = AdMob;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,7 +236,6 @@
 				ACF2411C123CD33200865987 /* Icon-Small@2x.png in Resources */,
 				ACF2411D123CD33200865987 /* Icon.png in Resources */,
 				ACF2411E123CD33200865987 /* Icon@2x.png in Resources */,
-				ACCB62EB13421E6500ACE658 /* QuickWebViewController.xib in Resources */,
 				ACCB634C13423E5E00ACE658 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,9 +253,6 @@
 				ACD1BFA31108302000CC1179 /* WhatDayTodayApiModel.m in Sources */,
 				ACD1BFAC1108323D00CC1179 /* myConnection.m in Sources */,
 				ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */,
-				ACCB62E913421E6500ACE658 /* AdViewTemplate.m in Sources */,
-				ACCB62EA13421E6500ACE658 /* QuickWebViewController.m in Sources */,
-				ACCB62EC13421E6500ACE658 /* SmAddView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
