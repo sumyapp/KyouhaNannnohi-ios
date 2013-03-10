@@ -36,6 +36,9 @@
 		AC6128EB16ECB402003EBA22 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128DC16ECB402003EBA22 /* JSONKit.m */; };
 		AC6128EC16ECB402003EBA22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6128DD16ECB402003EBA22 /* README.md */; };
 		AC6128ED16ECB402003EBA22 /* libadlantis_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */; };
+		AC6128F416ECB840003EBA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F216ECB834003EBA22 /* CoreTelephony.framework */; };
+		AC6128F516ECB840003EBA22 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F016ECB821003EBA22 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AC6128F616ECB840003EBA22 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128EE16ECB80E003EBA22 /* StoreKit.framework */; };
 		ACCB62DF13421D9B00ACE658 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCB62DE13421D9B00ACE658 /* Reachability.m */; };
 		ACCB630513421F5C00ACE658 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630313421F4600ACE658 /* MessageUI.framework */; };
 		ACCB630613421F5C00ACE658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB630113421F3F00ACE658 /* MediaPlayer.framework */; };
@@ -122,6 +125,9 @@
 		AC6128DC16ECB402003EBA22 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		AC6128DD16ECB402003EBA22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libadlantis_ios_sdk.a; sourceTree = "<group>"; };
+		AC6128EE16ECB80E003EBA22 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AC6128F016ECB821003EBA22 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AC6128F216ECB834003EBA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		ACCB62DD13421D9B00ACE658 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		ACCB62DE13421D9B00ACE658 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
@@ -151,6 +157,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6128F416ECB840003EBA22 /* CoreTelephony.framework in Frameworks */,
+				AC6128F516ECB840003EBA22 /* AdSupport.framework in Frameworks */,
+				AC6128F616ECB840003EBA22 /* StoreKit.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -175,6 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				AC61289316ECB3D4003EBA22 /* AdStir v1.4.0 */,
+				AC6128F216ECB834003EBA22 /* CoreTelephony.framework */,
+				AC6128F016ECB821003EBA22 /* AdSupport.framework */,
+				AC6128EE16ECB80E003EBA22 /* StoreKit.framework */,
 				ACCB630113421F3F00ACE658 /* MediaPlayer.framework */,
 				ACCB630313421F4600ACE658 /* MessageUI.framework */,
 				ACCB62FF13421F1300ACE658 /* AudioToolbox.framework */,
