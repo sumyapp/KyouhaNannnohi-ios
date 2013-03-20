@@ -20,7 +20,7 @@
 	// MEDIA-ID,SPOT-NOには、管理画面で発行されたメディアID, 枠ナンバーを埋め込んでください。
 	// 詳しくはhttp://wiki.ad-stir.com/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2ID%E5%8F%96%E5%BE%97をご覧ください。
     if(self.adview == nil) {
-        self.adview = [[[AdstirView alloc]initWithOrigin:CGPointMake(0, self.view.frame.size.height-50)]autorelease];
+        self.adview = [[AdstirView alloc]initWithOrigin:CGPointMake(0, self.view.frame.size.height-50)];
         self.adview.media = @"MEDIA-66bcc171";
         self.adview.spot = 1;
         self.adview.rootViewController = self;

@@ -32,9 +32,7 @@
 		AC6128E716ECB402003EBA22 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128D316ECB401003EBA22 /* AFXMLRequestOperation.m */; };
 		AC6128E816ECB402003EBA22 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128D516ECB401003EBA22 /* UIImageView+AFNetworking.m */; };
 		AC6128E916ECB402003EBA22 /* Adlantis.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC6128D616ECB401003EBA22 /* Adlantis.strings */; };
-		AC6128EA16ECB402003EBA22 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6128DA16ECB402003EBA22 /* CHANGELOG.md */; };
 		AC6128EB16ECB402003EBA22 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6128DC16ECB402003EBA22 /* JSONKit.m */; };
-		AC6128EC16ECB402003EBA22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AC6128DD16ECB402003EBA22 /* README.md */; };
 		AC6128ED16ECB402003EBA22 /* libadlantis_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128DE16ECB402003EBA22 /* libadlantis_ios_sdk.a */; };
 		AC6128F416ECB840003EBA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F216ECB834003EBA22 /* CoreTelephony.framework */; };
 		AC6128F516ECB840003EBA22 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6128F016ECB821003EBA22 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -226,7 +224,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				AC6128FF16ECBE73003EBA22 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -249,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				ACCB634B13423E5E00ACE658 /* Default@2x.png */,
+				AC6128FF16ECBE73003EBA22 /* Default-568h@2x.png */,
 				ACF24113123CD33200865987 /* Icon-72.png */,
 				ACF24114123CD33200865987 /* Icon-Small-50.png */,
 				ACF24115123CD33200865987 /* Icon-Small.png */,
@@ -439,8 +437,6 @@
 				ACF2411E123CD33200865987 /* Icon@2x.png in Resources */,
 				ACCB634C13423E5E00ACE658 /* Default@2x.png in Resources */,
 				AC6128E916ECB402003EBA22 /* Adlantis.strings in Resources */,
-				AC6128EA16ECB402003EBA22 /* CHANGELOG.md in Resources */,
-				AC6128EC16ECB402003EBA22 /* README.md in Resources */,
 				AC61290016ECBE73003EBA22 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
